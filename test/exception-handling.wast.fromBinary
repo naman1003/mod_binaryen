@@ -1,0 +1,171 @@
+(module
+ (type $none_=>_none (func))
+ (type $i32_=>_none (func (param i32)))
+ (type $i64_=>_none (func (param i64)))
+ (type $i32_i64_=>_none (func (param i32 i64)))
+ (event $event$0 (attr 0) (param i32))
+ (event $event$1 (attr 0) (param i64))
+ (event $event$2 (attr 0) (param i32 i64))
+ (func $foo
+  (nop)
+ )
+ (func $bar
+  (nop)
+ )
+ (func $eh_test
+  (local $x i32)
+  (local $1 i64)
+  (local $2 (i32 i64))
+  (local $3 i32)
+  (local $4 i32)
+  (try
+   (do
+    (throw $event$0
+     (i32.const 0)
+    )
+   )
+   (catch $event$0
+    (drop
+     (pop i32)
+    )
+   )
+  )
+  (try
+   (do
+    (throw $event$2
+     (i32.const 0)
+     (i64.const 0)
+    )
+   )
+   (catch $event$2
+    (local.set $2
+     (pop i32 i64)
+    )
+    (local.set $x
+     (block (result i32)
+      (local.set $3
+       (tuple.extract 0
+        (local.get $2)
+       )
+      )
+      (local.set $1
+       (tuple.extract 1
+        (local.get $2)
+       )
+      )
+      (local.get $3)
+     )
+    )
+    (drop
+     (block (result i32)
+      (local.set $4
+       (local.get $x)
+      )
+      (drop
+       (local.get $1)
+      )
+      (local.get $4)
+     )
+    )
+   )
+  )
+  (block $label$5
+   (try
+    (do
+     (br $label$5)
+    )
+    (catch $event$0
+     (drop
+      (pop i32)
+     )
+     (br $label$5)
+    )
+   )
+  )
+  (try
+   (do
+    (nop)
+   )
+   (catch $event$0
+    (drop
+     (pop i32)
+    )
+   )
+  )
+  (try
+   (do
+    (call $foo)
+    (call $bar)
+   )
+   (catch $event$0
+    (drop
+     (pop i32)
+    )
+    (call $foo)
+    (call $bar)
+   )
+  )
+  (try
+   (do
+    (throw $event$0
+     (i32.const 0)
+    )
+   )
+   (catch $event$0
+    (drop
+     (pop i32)
+    )
+   )
+   (catch $event$1
+    (drop
+     (pop i64)
+    )
+   )
+  )
+  (try
+   (do
+    (throw $event$0
+     (i32.const 0)
+    )
+   )
+   (catch_all
+    (nop)
+   )
+  )
+  (try
+   (do
+    (throw $event$0
+     (i32.const 0)
+    )
+   )
+   (catch $event$0
+    (drop
+     (pop i32)
+    )
+   )
+   (catch $event$1
+    (drop
+     (pop i64)
+    )
+   )
+   (catch_all
+    (call $foo)
+    (call $bar)
+   )
+  )
+  (try
+   (do
+    (throw $event$0
+     (i32.const 0)
+    )
+   )
+   (catch $event$0
+    (drop
+     (pop i32)
+    )
+    (rethrow 0)
+   )
+  )
+ )
+)
+

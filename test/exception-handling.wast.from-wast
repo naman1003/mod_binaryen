@@ -1,0 +1,145 @@
+(module
+ (type $none_=>_none (func))
+ (type $i32_=>_none (func (param i32)))
+ (type $i64_=>_none (func (param i64)))
+ (type $i32_i64_=>_none (func (param i32 i64)))
+ (event $e-i32 (attr 0) (param i32))
+ (event $e-i64 (attr 0) (param i64))
+ (event $e-i32-i64 (attr 0) (param i32 i64))
+ (func $foo
+  (nop)
+ )
+ (func $bar
+  (nop)
+ )
+ (func $eh_test
+  (local $x (i32 i64))
+  (try
+   (do
+    (throw $e-i32
+     (i32.const 0)
+    )
+   )
+   (catch $e-i32
+    (drop
+     (pop i32)
+    )
+   )
+  )
+  (try
+   (do
+    (throw $e-i32-i64
+     (i32.const 0)
+     (i64.const 0)
+    )
+   )
+   (catch $e-i32-i64
+    (local.set $x
+     (pop i32 i64)
+    )
+    (drop
+     (tuple.extract 0
+      (local.get $x)
+     )
+    )
+   )
+  )
+  (block $l1
+   (try
+    (do
+     (br $l1)
+    )
+    (catch $e-i32
+     (drop
+      (pop i32)
+     )
+     (br $l1)
+    )
+   )
+  )
+  (try
+   (do
+    (nop)
+   )
+   (catch $e-i32
+    (drop
+     (pop i32)
+    )
+   )
+  )
+  (try
+   (do
+    (call $foo)
+    (call $bar)
+   )
+   (catch $e-i32
+    (drop
+     (pop i32)
+    )
+    (call $foo)
+    (call $bar)
+   )
+  )
+  (try
+   (do
+    (throw $e-i32
+     (i32.const 0)
+    )
+   )
+   (catch $e-i32
+    (drop
+     (pop i32)
+    )
+   )
+   (catch $e-i64
+    (drop
+     (pop i64)
+    )
+   )
+  )
+  (try
+   (do
+    (throw $e-i32
+     (i32.const 0)
+    )
+   )
+   (catch_all
+    (nop)
+   )
+  )
+  (try
+   (do
+    (throw $e-i32
+     (i32.const 0)
+    )
+   )
+   (catch $e-i32
+    (drop
+     (pop i32)
+    )
+   )
+   (catch $e-i64
+    (drop
+     (pop i64)
+    )
+   )
+   (catch_all
+    (call $foo)
+    (call $bar)
+   )
+  )
+  (try
+   (do
+    (throw $e-i32
+     (i32.const 0)
+    )
+   )
+   (catch $e-i32
+    (drop
+     (pop i32)
+    )
+    (rethrow 0)
+   )
+  )
+ )
+)

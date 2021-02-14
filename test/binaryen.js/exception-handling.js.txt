@@ -1,0 +1,24 @@
+(module
+ (type $none_=>_none (func))
+ (type $i32_=>_none (func (param i32)))
+ (event $e (attr 0) (param i32))
+ (func $test
+  (try
+   (do
+    (throw $e
+     (i32.const 0)
+    )
+   )
+   (catch $e
+    (drop
+     (pop i32)
+    )
+    (rethrow 0)
+   )
+  )
+ )
+)
+
+getExpressionInfo(throw) = {"id":48,"type":1,"event":"e"}
+getExpressionInfo(rethrow) = {"id":49,"type":1,"depth":0}
+getExpressionInfo(try) = {"id":47,"type":1,"hasCatchAll":0}

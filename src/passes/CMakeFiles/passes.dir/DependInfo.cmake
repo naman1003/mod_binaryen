@@ -1,0 +1,95 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/naman/binaryen1/binaryen/src/passes/AlignmentLowering.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/AlignmentLowering.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Asyncify.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Asyncify.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/AvoidReinterprets.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/AvoidReinterprets.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/CoalesceLocals.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/CoalesceLocals.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/CodeFolding.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/CodeFolding.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/CodePushing.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/CodePushing.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/ConstHoisting.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/ConstHoisting.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/DWARF.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/DWARF.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/DataFlowOpts.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/DataFlowOpts.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/DeAlign.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/DeAlign.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/DeNaN.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/DeNaN.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/DeadArgumentElimination.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/DeadArgumentElimination.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/DeadCodeElimination.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/DeadCodeElimination.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Directize.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Directize.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/DuplicateFunctionElimination.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/DuplicateFunctionElimination.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/DuplicateImportElimination.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/DuplicateImportElimination.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/ExtractFunction.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/ExtractFunction.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Flatten.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Flatten.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/FuncCastEmulation.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/FuncCastEmulation.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/GenerateDynCalls.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/GenerateDynCalls.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/I64ToI32Lowering.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/I64ToI32Lowering.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Inlining.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Inlining.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/InstrumentLocals.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/InstrumentLocals.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/InstrumentMemory.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/InstrumentMemory.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/LegalizeJSInterface.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/LegalizeJSInterface.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/LimitSegments.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/LimitSegments.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/LocalCSE.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/LocalCSE.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/LogExecution.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/LogExecution.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/LoopInvariantCodeMotion.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/LoopInvariantCodeMotion.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Memory64Lowering.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Memory64Lowering.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/MemoryPacking.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/MemoryPacking.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/MergeBlocks.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/MergeBlocks.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/MergeLocals.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/MergeLocals.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Metrics.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Metrics.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/MinifyImportsAndExports.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/MinifyImportsAndExports.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/NameList.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/NameList.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/NoExitRuntime.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/NoExitRuntime.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/OptimizeAddedConstants.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/OptimizeAddedConstants.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/OptimizeInstructions.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/OptimizeInstructions.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/PickLoadSigns.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/PickLoadSigns.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Poppify.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Poppify.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/PostAssemblyScript.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/PostAssemblyScript.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/PostEmscripten.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/PostEmscripten.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Precompute.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Precompute.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Print.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Print.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/PrintCallGraph.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/PrintCallGraph.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/PrintFeatures.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/PrintFeatures.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/PrintFunctionMap.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/PrintFunctionMap.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/ReReloop.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/ReReloop.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/RedundantSetElimination.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/RedundantSetElimination.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/RemoveImports.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/RemoveImports.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/RemoveMemory.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/RemoveMemory.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/RemoveNonJSOps.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/RemoveNonJSOps.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/RemoveUnusedBrs.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/RemoveUnusedBrs.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/RemoveUnusedModuleElements.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/RemoveUnusedModuleElements.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/RemoveUnusedNames.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/RemoveUnusedNames.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/ReorderFunctions.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/ReorderFunctions.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/ReorderLocals.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/ReorderLocals.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/RoundTrip.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/RoundTrip.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/SSAify.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/SSAify.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/SafeHeap.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/SafeHeap.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/SimplifyGlobals.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/SimplifyGlobals.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/SimplifyLocals.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/SimplifyLocals.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Souperify.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Souperify.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/StackCheck.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/StackCheck.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/StackIR.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/StackIR.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Strip.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Strip.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/StripTargetFeatures.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/StripTargetFeatures.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/TrapMode.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/TrapMode.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Untee.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Untee.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/Vacuum.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/Vacuum.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/WasmIntrinsics.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/WasmIntrinsics.cpp.o"
+  "/home/naman/binaryen1/binaryen/src/passes/pass.cpp" "/home/naman/binaryen1/binaryen/src/passes/CMakeFiles/passes.dir/pass.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "src"
+  "third_party/llvm-project/include"
+  "."
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
